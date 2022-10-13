@@ -1,30 +1,50 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Website</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaks</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="script.js" defer></script>
   </head>
 <body class="Background2">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-  <nav class="nav nav-pills flex-column flex-sm-row ">
-    <ul class="nav nav-pills">
-    </li>
-    <li class="nav-item dropdown">
-      <a style="color:rgb(240, 6, 6);" class="nav-link dropdown-toggle bg-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Home</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="/Home.html">Home</a></li>
-        <li><a class="dropdown-item" href="/Poll.html">Feedback [Limited Time]</a></li>
-      </ul>
-    </li>
-  </ul>
-    <a style="background-color:rgb(240, 6, 6);" style="color:rgb(240, 6, 6);" class="flex-sm-fill text-sm-center nav-link active" href="/Leaks.html">Leaks</a>
-    <a style="color:rgb(240, 6, 6);" class="flex-sm-fill text-sm-center nav-link bg-dark" href="/Support.html">Support</a>
-    <a style="color:rgb(240, 6, 6);" class="flex-sm-fill text-sm-center nav-link bg-dark" href="/Changelog.html">Changelog</a>
-    <a style="color:rgb(240, 6, 6);" class="flex-sm-fill text-sm-center nav-link bg-dark" href="/About.html">About</a>
+  <nav style="background-color: black;" class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/Home.html">THE UNDERGROUND</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/Home.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/Home.html">Home</a></li>
+                <li><a class="dropdown-item" href="/Poll.html">Feedback [Limited Time]</a></li>
+              </ul>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/Leaks.html">Leaks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Support.html">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Changelog.html">Changelog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/About.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 <style>
 body {
@@ -86,7 +106,7 @@ body {
 
 .close:hover,
 .close:focus {
-  color: #999;
+  color: rgb(245, 7, 7);
   text-decoration: none;
   cursor: pointer;
 }
@@ -102,13 +122,14 @@ body {
 /* Next & previous buttons */
 .prev,
 .next {
+  text-decoration: none;
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: rgb(255, 0, 0);
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
@@ -183,6 +204,9 @@ img.hover-shadow {
   <div class="column">
     <img src="unknown6.PNG" style="width: 500px; height: 250px;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
   </div>
+  <div class="column">
+    <img src="unknown7.PNG" style="width: 500px; height: 250px;" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
 </div>
 
 <div id="myModal" class="modal">
@@ -190,23 +214,28 @@ img.hover-shadow {
   <div class="modal-content">
 
     <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
+      <div class="numbertext">1 / 5</div>
       <img src="unknown3.PNG" style="width: 1200px; height: 600px;">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
+      <div class="numbertext">2 / 5</div>
       <img src="unknown4.PNG" style="width: 1200px; height: 600px;">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
+      <div class="numbertext">3 / 5</div>
       <img src="unknown5.PNG" style="width: 1200px; height: 600px;">
     </div>
     
     <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
+      <div class="numbertext">4 / 5</div>
       <img src="unknown6.PNG" style="width: 1200px; height: 600px;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="unknown7.PNG" style="width: 1200px; height: 600px;">
     </div>
     
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>

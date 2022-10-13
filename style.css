@@ -228,4 +228,53 @@
 
 
 
+  .Changelog {
+    animation: Changelog 20s linear infinite;
+  }
+
+
+  @keyframes Changelog  {
+    0% {
+        color: red;
+    }
+    10% {
+        color: rgb(18, 197, 63);
+    }
+    20% {
+        color: rgb(0, 183, 255);
+    }
+    30% {
+        color: rgb(255, 0, 234);
+    }
+    40% {
+        color: rgb(0, 153, 255);
+    }
+    50% {
+        color: rgb(0, 255, 200);
+    }
+    60% {
+        color: rgb(0, 255, 42);
+    }
+    70% {
+        color: rgb(76, 0, 255);
+    }
+    80% {
+        color: rgb(255, 0, 13);
+    }
+    90% {
+        color: rgb(255, 208, 0);
+    }
+    100% {
+        color: rgb(255, 0, 149);
+    }
+        
+  }
+
+ 
+
+.progress {
+    position: relative;
+    bottom: -10px;
+
+}
   

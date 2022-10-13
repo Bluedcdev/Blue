@@ -1,9 +1,10 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE UNDERGROUND</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="script.js" defer></script>
@@ -11,18 +12,47 @@
   </head>
 <body class="Background1">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-  <nav class="nav nav-pills flex-column flex-sm-row">
-    <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="/Home.html">Home</a>
-    <a class="flex-sm-fill text-sm-center nav-link bg-dark" href="/Leaks.html">Leaks</a>
-    <a class="flex-sm-fill text-sm-center nav-link bg-dark" href="/Support.html">Support</a>
-    <a class="flex-sm-fill text-sm-center nav-link bg-dark" href="/Changelog.html">Changelog</a>
-    <a class="flex-sm-fill text-sm-center nav-link bg-dark" href="/About.html">About</a>
+  <nav style="background-color: black;" class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/Home.html">THE UNDERGROUND</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="/Home.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/Home.html">Home</a></li>
+                <li><a class="dropdown-item" href="/Poll.html">Feedback [Limited Time]</a></li>
+              </ul>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Leaks.html">Leaks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Support.html">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Changelog.html">Changelog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/About.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
+
   <div class="container">
     <h1 style="font-size: 60%;" id="Text1" class="Underground">The Underground Release Countdown</h1>
     <div id="line"></div>
         <div style="position: relative; font-size: 120%;">
-    <p id="timer"></p>
+    <p class="TIMER" id="timer"></p>
         </div>
 </div>
 <div class="Infobtn">
@@ -32,6 +62,7 @@
 </div>
 
 <!-- Modal -->
+<div class="Modal">
 <div class=" bg-dark modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -40,10 +71,15 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body rounded">
-        When This countdown ends, the game "The Underground" will be released
+        <ul>
+        <li>When This countdown ends, the game "The Underground" will be released</li>
+        <li>Every 4 Weeks there will be a new Leak!</li>
+        <li>Next Leak on the 11/12/2022</li>
+</ul>
       </div>
     </div>
   </div>
+</div>
 </div>
 <div>
 <br>
@@ -83,11 +119,11 @@
 <br>
 <br>
 <br>
-<br>
+
 </div>
 <h5 class="text-white" style="position: absolute; bottom: 20px;">Game Progress:</h5>
 <div class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Example with label" style="width: 22%;" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100">22%</div>
+  <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-label="Example with label" style="width: 22%;" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100">22%</div>
 </div>
   </body>
   </html>
