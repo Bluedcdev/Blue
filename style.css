@@ -67,7 +67,7 @@
 
 .Infobtn {
     position: absolute;
-    top: 35%;
+    top: 27%;
     left: 46.5%;
 }
 
@@ -94,7 +94,7 @@
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    color: white;            
+    color: rgb(255, 253, 253);            
     box-shadow: 0 0 20px rgb(240, 6, 6);
     border-radius: 100px;
     display: block;
@@ -127,8 +127,9 @@
     85%{
         margin-bottom: 20px;
         position: absolute;
-        top: 35%;
+        top: 27%;
     }
+
 }
  
 
