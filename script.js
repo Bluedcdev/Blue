@@ -1,4 +1,4 @@
-const countDate = new Date("Sep 26 2023 20:00:00").getTime();
+const countDate = new Date("Dec 24 2022 22:00:00").getTime();
 
 var x = setInterval(function(){
     let now = new Date().getTime();
@@ -15,7 +15,7 @@ var x = setInterval(function(){
     if(distance < 0){
         clearInterval(x);
         document.getElementById('Text1').innerHTML = "You can play it Soon!";
-        document.getElementById('timer').innerHTML = "The Underground is Released!";
+        document.getElementById('timer').innerHTML = "The Underground chapter 1 is released!";
     }
 })
 
