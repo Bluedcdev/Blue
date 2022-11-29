@@ -12,44 +12,47 @@
   </head>
 <body class="Background2">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <nav class="navbar navbar-dark bg-dark">
+  <nav class="navbar bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/index.html">The Underground</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-        <span class="navbar-toggler-icon"></span>
+      <a class="navbar-brand" href="/Home.html">THE UNDERGROUND</a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
       </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Main Menu</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Important
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="/Leaks.html">Leaks</a></li>
-                <li><a class="dropdown-item" href="/About.html ">About The Game</a></li>
-                <li><button class="dropdown-item" href="/Vbucks.html" disabled>Game Link [Soon]</button></li>
-              </ul>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Other
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="/Support.html">Support [Beta]</a></li>
-                  <li><a class="dropdown-item" href="/Changelog.html">Website Changelog [New]</a></li>
-                  <li><a class="dropdown-item" href="/AboutDev.html" >About the Dev</a></li>
-                  <li><button class="dropdown-item" href="/AboutDev.html" disabled>Game Changelog [Soon]</button></li>
-                </ul>
-            </li>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-secondary" aria-current="page" href="/Home.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-secondary" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Important
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="/Leaks.html">Leaks</a></li>
+              <li><a class="dropdown-item" href="/Support.html">Support</a></li>
+              <li><a class="dropdown-item" href="/Changelog.html">Changelog</a></li>
+            </ul>
+          </li>
+          <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Other
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="/About.html">About</a></li>
+            <li><a class="dropdown-item" href="/Poll.html">Feedback [limited time]</a></li>
           </ul>
-        </div>
+          <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Coming soon
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item disabled" href="">Game link</a></li>
+            <li><a class="dropdown-item disabled href="">Game changelog</a></li>
+            <li><a class="dropdown-item disabled href="">Game tips</a></li>
+            <li><a class="dropdown-item disabled href="">Discord</a></li>
+          </ul>
+        </ul>
       </div>
     </div>
   </nav>

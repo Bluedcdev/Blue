@@ -12,37 +12,46 @@
   </head>
 <body class="Background2">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <nav style="background-color: black;" class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="/Home.html">THE UNDERGROUND</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/Home.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Home
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/Home.html">Home</a></li>
-                <li><a class="dropdown-item" href="/Poll.html">Feedback [Limited Time]</a></li>
-              </ul>
-            </li>
+            <a class="nav-link active text-secondary" aria-current="page" href="/Home.html">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="/Leaks.html">Leaks</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-secondary" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Important
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="/Leaks.html">Leaks</a></li>
+              <li><a class="dropdown-item" href="/Support.html">Support</a></li>
+              <li><a class="dropdown-item" href="/Changelog.html">Changelog</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Support.html">Support</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Changelog.html">Changelog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/About.html">About</a>
-          </li>
+          <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Other
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="/About.html">About</a></li>
+            <li><a class="dropdown-item" href="/Poll.html">Feedback [limited time]</a></li>
+          </ul>
+          <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Coming soon
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item disabled" href="">Game link</a></li>
+            <li><a class="dropdown-item disabled href="">Game changelog</a></li>
+            <li><a class="dropdown-item disabled href="">Game tips</a></li>
+            <li><a class="dropdown-item disabled href="">Discord</a></li>
+          </ul>
         </ul>
       </div>
     </div>
@@ -194,19 +203,22 @@ img.hover-shadow {
 
 <div class="row">
   <div class="column">
-    <img src="unknown3.PNG" style="width: 500px; height: 250px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    <img src="unknown3.PNG" style="width: 500px; height: 300px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img src="unknown4.PNG" style="width: 500px; height: 250px;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <img src="unknown4.PNG" style="width: 500px; height: 300px;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img src="unknown5.PNG" style="width: 500px; height: 250px;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    <img src="unknown5.PNG" style="width: 500px; height: 300px;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img src="unknown6.PNG" style="width: 500px; height: 250px;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    <img src="unknown6.PNG" style="width: 500px; height: 300px;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img src="Unknown7.png" style="width: 500px; height: 250px;" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+    <img src="Unknown7.png" style="width: 500px; height: 300px;" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Unknown8.png" style="width: 500px; height: 300px;" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
   </div>
 </div>
 
@@ -215,28 +227,33 @@ img.hover-shadow {
   <div class="modal-content">
 
     <div class="mySlides">
-      <div class="numbertext">1 / 5</div>
-      <img src="unknown3.PNG" style="width: 1200px; height: 600px;">
+      <div class="numbertext">1 / 6</div>
+      <img src="unknown3.PNG" style="width: 1200px; height: 700px;">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">2 / 5</div>
-      <img src="unknown4.PNG" style="width: 1200px; height: 600px;">
+      <div class="numbertext">2 / 6</div>
+      <img src="unknown4.PNG" style="width: 1200px; height: 700px;">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">3 / 5</div>
-      <img src="unknown5.PNG" style="width: 1200px; height: 600px;">
+      <div class="numbertext">3 / 6</div>
+      <img src="unknown5.PNG" style="width: 1200px; height: 700px;">
     </div>
     
     <div class="mySlides">
-      <div class="numbertext">4 / 5</div>
-      <img src="unknown6.PNG" style="width: 1200px; height: 600px;">
+      <div class="numbertext">4 / 6</div>
+      <img src="unknown6.PNG" style="width: 1200px; height: 700px;">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">5 / 5</div>
-      <img src="Unknown7.png" style="width: 1200px; height: 600px;">
+      <div class="numbertext">5 / 6</div>
+      <img src="Unknown7.png" style="width: 1200px; height: 700px;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="unknown8.png" style="width: 1200px; height: 700px;">
     </div>
     
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>

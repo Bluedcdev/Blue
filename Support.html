@@ -11,37 +11,46 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="Background2">
-  <nav style="background-color: black;" class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="/Home.html">THE UNDERGROUND</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/Home.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Home
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/Home.html">Home</a></li>
-                <li><a class="dropdown-item" href="/Poll.html">Feedback [Limited Time]</a></li>
-              </ul>
-            </li>
+            <a class="nav-link active text-secondary" aria-current="page" href="/Home.html">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Leaks.html">Leaks</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-secondary" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Important
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="/Leaks.html">Leaks</a></li>
+              <li><a class="dropdown-item" href="/Support.html">Support</a></li>
+              <li><a class="dropdown-item" href="/Changelog.html">Changelog</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="/Support.html">Support</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Changelog.html">Changelog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/About.html">About</a>
-          </li>
+          <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Other
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="/About.html">About</a></li>
+            <li><a class="dropdown-item" href="/Poll.html">Feedback [limited time]</a></li>
+          </ul>
+          <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Coming soon
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item disabled" href="">Game link</a></li>
+            <li><a class="dropdown-item disabled href="">Game changelog</a></li>
+            <li><a class="dropdown-item disabled href="">Game tips</a></li>
+            <li><a class="dropdown-item disabled href="">Discord</a></li>
+          </ul>
         </ul>
       </div>
     </div>
